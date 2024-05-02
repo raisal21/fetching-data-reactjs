@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;  /* Align the main axis vertically */
+  align-items: center;     /* Center items horizontally in the body */
+  padding: 20px;
+}
+
+.App {
+  flex-grow: 1;
+  width: 100%;
+  max-width: 1200px; /* Limit the maximum width of the app */
+  display: flex;
+  flex-direction: column;
+}
+
+.Header {
+  font-size: 2rem;
+  text-align: center; /* Center the title */
+}
+
+.search-form {
+  display: flex;
+  margin: 1rem 0;
+  align-items: center; /* Align form elements */
+}
+
+.search-input {
+  flex-grow: 1; /* Make search input grow to fill space */
+  margin-right: 8px; /* Add space between input and button */
+}
+
+.user-card {
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  align-items: center; /* Vertically center the contents */
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.user-card img {
+  width: 50px; /* Set a fixed size for images */
+  height: 50px;
+  border-radius: 50%; /* Make images circular */
+  margin-right: 10px;
+}
+
+.user-details {
+  flex-grow: 1; /* Allow the user details to take remaining space */
+}
+
+button {
+  padding: 0.6em 1.2em;
+  background-color: #646cff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5555ff;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
